@@ -1,0 +1,72 @@
+#header{
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background-image: url('../Assests/background-8.jpg');
+    /* background-image: url('unnamed\ \(1\).jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.userBox
+{
+    /* position: relative; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-67%);
+    /* width: 50vh; */
+    width: 30vh;
+    height: 30vh;
+    
+    position: absolute;
+    
+}
+.userBox img{
+    width: 100%;
+    border-radius: 50vh;
+    border: 2px solid rgb(12, 12, 97);
+    text-align: center;
+}
+.userBox h3
+{
+    font-weight: bold;
+}
+.userBox h3,p{
+    text-align: center; 
+    font-size: 2.5vh; 
+    color: white; 
+}
+
+/* Scroll BUTtton */
+
+.scrollBtn{
+    /* bottom: 30px; */
+    bottom: 3vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(228, 228, 235);
+    padding: 10px 10px 20px;
+    border-radius: 3vh;
+
+}
+.scrollBar span
+{
+    border: 2px solid rgb(228, 228, 235);
+    font-size: 1.3vh;
+    border-radius: 30px;
+}
+
+.scrollBar
+{
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}

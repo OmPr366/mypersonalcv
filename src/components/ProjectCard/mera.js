@@ -1,0 +1,1 @@
+document.getElementById("ok").style.backgroundColor = "red";
