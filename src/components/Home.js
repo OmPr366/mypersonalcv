@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import SkillCard from './ProjectCard/SkillCard';
 import SkillListCard from './ProjectCard/SkillListCard';
+import { motion } from 'framer-motion';
 
 
 const Home = () => {
@@ -10,10 +11,32 @@ const Home = () => {
       <div className="home mx-16  bg-white bg-opacity-75 px-3 text-justify ">
 
         {/* About Section */}
-        <div className="heading  border-b-8 border-blue-400 ">
+        <motion.div className="heading  border-b-8 border-blue-400 "
+          initial={{
+            marginLeft:"-100vw"
+          }}
+          animate={{
+            marginLeft:0
+          }}
+          transition={{
+            type:"spring",
+            delay:0
+          }}
+        >
           <h3 className="font-bold text-lg">About me</h3>
-        </div>
-        <div className="myDetails mt-10 mb-7">
+        </motion.div>
+        <motion.div className="myDetails mt-10 mb-7"
+          initial={{
+            x:"-100vw"
+          }}
+          animate={{
+            x:0
+          }}
+          transition={{
+            type:"spring",
+            delay:0.5
+          }}
+        >
           <p className="mydetails">
             Myself Om Prakash. I am persuing my btech in Information technology
             from Kalinga Institute of industrial technology. I'm currently in
@@ -23,14 +46,39 @@ const Home = () => {
             solve 2-3 questions on codeforces. I have also earned certification
             in SQL as 5 star coder in hackerrank.
           </p>
-        </div>
-        <hr className=" bg-blue-600" />
+        </motion.div>
+        <motion.hr className=" bg-blue-600"
+            initial={{
+              width:0
+            }}
+            animate={{
+              width:["2%","50%","40%","90%","85%","100%"]
+            }}
+            transition={{
+              
+              duration:5,
+              bounce:0.2
+            }}
+         />
 
         {/* Skill Section */}
         <div className="skillSection w-full my-4 ">
-          <div className="skillHeading heading border-b-8 border-blue-400">
-            <h3 className="font-bold text-lg">Skills</h3>
-          </div>
+          <motion.div className="skillHeading heading border-b-8 border-blue-400"
+            initial={{
+              marginLeft:"-100vw"
+            }}
+            animate={{
+              marginLeft:0
+            }}
+            transition={{
+              type:"spring",
+              delay:1.6
+            }}
+          >
+            <h3 className="font-bold text-lg"
+              
+            >Skills</h3>
+          </motion.div>
           <div className="allSkills flex  w-full justify-evenly mt-10 flex-wrap">
             <SkillCard />
           </div>

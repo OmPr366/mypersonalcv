@@ -2,14 +2,27 @@ import React,{useContext} from "react";
 import "./Card.css";
 import img from "../Assests/user-circle-solid-240.png";
 // import { myMode } from "../App";
+import { motion } from "framer-motion";
 
 const Card = () => {
   const myMode2 = "darkMode";
   return (
-    <div
+    <motion.div
       className={` profile fixed  ${
         myMode2 === "darkMode" ? "bg-blue-100 " : "bg-gray-400"
       }  left-10  rounded-xl  text-center`}
+      initial={{
+        marginTop:"-100vh"
+      }}
+      animate={{
+        marginTop:0
+      }}
+      transition={{
+        type:"spring",
+        delay:0.5
+
+      }}
+
     >
       <div
         className={`profileImg ${
@@ -135,7 +148,7 @@ const Card = () => {
         ></box-icon>
       </button>
       <div className="grass w-full h-7 rounded-xl"></div>
-    </div>
+    </motion.div>
   );
 };
 

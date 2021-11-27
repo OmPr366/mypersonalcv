@@ -8,6 +8,8 @@ import rope from "../Assests/rope.png";
 // import Alert from "@mui/material/Alert";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HomeIcon from "@mui/icons-material/Home";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 const Newnav = (props) => {
@@ -58,10 +60,33 @@ const Newnav = (props) => {
         ></i>
       </div>
 
-      <div className="butter w-2/3 h-5">
+      <motion.div className="butter w-2/3 h-5"
+        initial={{
+          opacity:0,
+        }}
+        animate={{
+          opacity:1,
+        }}
+        transition={{
+          duration:2,
+          delay:1.5
+        }}
+      >
         <img src={img} alt="" srcset="" />
-      </div>
-      <div className="mynav w-2/3 h-16 bg-white mx-16 rounded-md rounded-l-lg flex items-center pr-3 ">
+      </motion.div>
+      <motion.div className="mynav w-2/3 h-16 bg-white mx-16 rounded-md rounded-l-lg flex items-center pr-3 "
+        initial={{
+          marginTop:"-50vh",
+          opacity:0
+        }}
+        animate={{
+          marginTop:0,
+          opacity:1
+        }}
+        transition={{
+          type:"spring"
+        }}
+      >
         <div
           className={`homeLogo h-full w-28 flex justify-center items-center ${
             myMode2 === "darkMode" ? "bg-blue-600" : "bg-black "
@@ -77,27 +102,27 @@ const Newnav = (props) => {
                 active1 ? "text-blue-600 " : ""
               }`}
             >
-              {/* <Link to="/" onClick={click1}> */}
+              <Link to="/" >
               About
-              {/* </Link> */}
+              </Link>
             </li>
             <li
               className={`px-2 hover:text-blue-600 cursor-pointer hover:text-xl border-white hover:border-blue-600 border-2 ${
                 active2 ? "text-blue-600 " : ""
               }`}
             >
-              {/* <Link to="/Projects" onClick={click2}> */}
+              <Link to="/Projects" >
               Projects
-              {/* </Link> */}
+              </Link>
             </li>
             <li
               className={`px-2 hover:text-blue-600 cursor-pointer border-white hover:border-blue-600 border-2  ${
                 active3 ? "text-blue-600 " : ""
               }`}
             >
-              {/* <Link to="/Contact" onClick={click3}> */}
+              <Link to="/Contact" >
               Contact
-              {/* </Link> */}
+              </Link>
             </li>
           </ul>
         </div>
@@ -131,7 +156,7 @@ const Newnav = (props) => {
               ></box-icon> */}
           </button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
