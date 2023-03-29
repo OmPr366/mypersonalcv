@@ -27,7 +27,7 @@ const Content = ({ text, link }) => {
 const ExtraCurricularCard = (props) => {
   return (
     <motion.div
-      className="flex flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card"
+      className="flex flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card cursor-pointer "
       whileInView={{ y: [-60, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >

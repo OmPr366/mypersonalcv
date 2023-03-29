@@ -6,14 +6,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full  flex justify-between items-center navbar">
+    <nav className="w-full  flex justify-between items-center navbar pt-5 sticky  top-0 ">
       {/* Logo */}
       <a href="#home">
-        <img
-          src={logo}
-          alt="Om Prakash"
-          className="w-[102px] h-[54px]"
-        />
+        <img src={logo} alt="Om Prakash" className="w-[102px] h-[54px] " />
       </a>
 
       {/* List of links */}
