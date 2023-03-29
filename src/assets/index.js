@@ -28,11 +28,8 @@ import kiitlogo from "./kiitlogo.png";
 import cluboard from "./cluboard.png";
 import cash_flow from "./cash_flow.jpg";
 import freadom from "./freadom.jpg";
-import ecell from "./ecell.png";
 import bank from "./bank.jpg";
-import gdsc from "./gdsc.png";
 import draggital from "./draggital.png";
-import genesis from "./genesis.jpg";
 import todo from "./todo.jpg";
 import graphql from "./graphql.png";
 import portfolio from "./portfolio.jpg";
@@ -43,6 +40,9 @@ import chargeswap from "./chargeswap.png";
 import placeicon from "./place-icon.svg";
 import recruitment from "./recruitment.png";
 import huntly from "./huntly.png";
+import hackmas from "./hackmas.jpeg";
+import gfgkiit from "./gfgkiit.jpeg";
+import corridor from "./corridor.jpeg";
 
 export {
   airbnb,
@@ -74,10 +74,7 @@ export {
   cash_flow,
   freadom,
   bank,
-  gdsc,
   draggital,
-  ecell,
-  genesis,
   todo,
   graphql,
   portfolio,
@@ -90,4 +87,7 @@ export {
   placeicon,
   recruitment,
   huntly,
+  hackmas,
+  gfgkiit,
+  corridor
 };
