@@ -43,6 +43,7 @@ import huntly from "./huntly.png";
 import hackmas from "./hackmas.jpeg";
 import gfgkiit from "./gfgkiit.jpeg";
 import corridor from "./corridor.jpeg";
+import easyhaionline from "./eashyhaionline.png"
 
 export {
   airbnb,
@@ -89,5 +90,6 @@ export {
   huntly,
   hackmas,
   gfgkiit,
-  corridor
+  corridor,
+  easyhaionline
 };

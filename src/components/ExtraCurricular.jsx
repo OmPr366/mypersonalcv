@@ -61,9 +61,9 @@ const ExtraCurricularCard = (props) => {
 
 const ExtraCurricular = () => {
   return (
-    <section id="extraCurricular">
+    <section id="Achievement">
       <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
-        Extra Curricular
+      Achievements
       </h1>
 
       <div className={`${styles.flexCenter} flex-col relative mb-4 mt-8`}>

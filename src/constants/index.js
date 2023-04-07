@@ -21,6 +21,7 @@ import {
   hackmas,
   gfgkiit,
   corridor,
+  easyhaionline
 } from "../assets";
 
 import {
@@ -74,6 +75,19 @@ import {
   SiTypescript,
   SiNodedotjs,
   SiSelenium,
+  SiHtml5,
+  SiCss3,
+  SiPostcss,
+  SiSass,
+  SiExpress,
+  SiRedis,
+  SiAngular,
+  SiAngularjs,
+  SiDocker,
+  SiHeroku,
+  SiRedux,
+  SiFacebook,
+  SiSocketdotio,
 } from "react-icons/si";
 
 import { FaHardHat } from "react-icons/fa";
@@ -102,12 +116,8 @@ export const navLinks = [
     title: "Projects",
   },
   {
-    id: "openSource",
-    title: "Open Source",
-  },
-  {
-    id: "extraCurricular",
-    title: "Extra Curricular",
+    id: "Achievement",
+    title: "Achievements",
   },
   {
     id: "contactMe",
@@ -169,7 +179,7 @@ export const skills = [
     ],
   },
   {
-    title: "Frameworks/Libraries",
+    title: "Frontend",
     items: [
       {
         id: "f-1",
@@ -188,28 +198,94 @@ export const skills = [
       },
       {
         id: "f-4",
-        icon: SiDjango,
-        name: "Django",
+        icon: SiHtml5,
+        name: "HTML",
       },
       {
         id: "f-5",
+        icon: SiCss3,
+        name: "CSS",
+      },
+      {
+        id: "f-6",
+        icon: SiSass,
+        name: "SCSS",
+      },
+      {
+        id: "f-7",
         icon: SiBootstrap,
         name: "Bootstrap",
       },
       {
-        id: "f-6",
+        id: "f-8",
         icon: SiTailwindcss,
         name: "Tailwind CSS",
       },
       {
+        id: "f-9",
+        icon: SiRedux,
+        name: "Redux",
+      },
+      {
+        id: "f-9",
+        icon: SiFacebook,
+        name: "Recoil",
+      },
+      
+      {
+        id: "f-10",
+        icon: SiAngularjs,
+        name: "Angular",
+      },
+    ],
+  },
+  {
+    title: "Backend",
+    items: [
+      {
+        id: "f-1",
+        icon: SiJavascript,
+        name: "NodeJs",
+      },
+      {
+        id: "f-2",
+        icon: SiExpress,
+        name: "ExpressJs",
+      },
+      {
+        id: "f-3",
+        icon: SiMongodb,
+        name: "Mongo Db",
+      },
+      {
+        id: "f-4",
+        icon: SiMysql,
+        name: "MySQL",
+      },
+      {
+        id: "f-5",
+        icon: SiDjango,
+        name: "Django",
+      },
+      {
+        id: "f-6",
+        icon: SiRedis,
+        name: "Redis",
+      },
+      {
         id: "f-7",
-        icon: SiNodedotjs,
-        name: "Rest API",
+        icon: SiFlask,
+        name: "Flask",
       },
       {
         id: "f-8",
-        icon: SiStorybook,
-        name: "Storybook",
+        icon: SiGraphql,
+        name: "GraphQl",
+      },
+      {
+        id: "f-8",
+        icon: SiSocketdotio,
+        name: "Socket.io",
       },
       // {
       //   id: "f-7",
@@ -223,48 +299,49 @@ export const skills = [
     items: [
       {
         id: "t-1",
-        icon: SiMysql,
-        name: "MySQL",
-      },
-      {
-        id: "t-2",
-        icon: SiMongodb,
-        name: "MongoDb",
-      },
-      {
-        id: "t-3",
-        icon: SiPostman,
-        name: "Postman",
-      },
-      {
-        id: "t-4",
-        icon: SiVisualstudiocode,
-        name: "VS Code",
-      },
-      {
-        id: "t-5",
-        icon: SiGit,
-        name: "Git",
-      },
-      {
-        id: "t-6",
-        icon: AiFillGithub,
-        name: "GitHub",
-      },
-      {
-        id: "t-7",
-        icon: SiNetlify,
-        name: "Netlify",
-      },
-      {
-        id: "t-8",
         icon: SiAmazonaws,
         name: "AWS",
       },
       {
-        id: "t-9",
+        id: "t-2",
+        icon: SiPostman,
+        name: "Postman",
+      },
+      {
+        id: "t-3",
+        icon: SiDocker,
+        name: "Docker",
+      },
+      {
+        id: "t-4",
         icon: SiFirebase,
         name: "Firebase",
+      },
+      {
+        id: "t-5",
+        icon: SiHeroku,
+        name: "Heroku",
+      },
+      
+      {
+        id: "t-6",
+        icon: SiVisualstudiocode,
+        name: "VS Code",
+      },
+      {
+        id: "t-7",
+        icon: SiGit,
+        name: "Git",
+      },
+      {
+        id: "t-8",
+        icon: AiFillGithub,
+        name: "GitHub",
+      },
+      {
+        id: "t-9",
+        icon: SiNetlify,
+        name: "Netlify",
       },
       {
         id: "t-10",
@@ -363,6 +440,32 @@ export const projects = [
         id: "icon-3",
         icon: SiSelenium,
         name: "Selenium",
+      },
+    ],
+  },
+  {
+    id: "project-2",
+    title: "EasyHaiOnline App",
+    github: "",
+    link: "https://play.google.com/store/apps/details?id=com.easyhaionlineind",
+    image: easyhaionline,
+    content:
+      "EasyhaiOnline is an Edu-tech App and a part of Harshly group which was established collectively by the dint of enthusiastic and highly skilled engineers, management professionals and skillfully competent educators.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React Native",
+      },
+      {
+        id: "icon-2",
+        icon: SiRedux,
+        name: "Redux",
+      },
+      {
+        id: "icon-3",
+        icon: SiFirebase,
+        name: "Firebase",
       },
     ],
   },
@@ -554,5 +657,5 @@ export const aboutMe = {
   tagLine:
     "Web Developer | Android Developer | Backend Developer | Open Source Contributor",
   intro:
-    "Student web-developer from India who is either busy improving his craft or pondering over the next big idea.",
+    "Web Developer | Android Developer | Backend Developer | Freelancer",
 };
