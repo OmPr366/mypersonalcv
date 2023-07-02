@@ -15,7 +15,7 @@ import {
   Loading
 } from "./components";
 
-const App = () => {
+const Comp = () => {
   const [isLoading,setIsLoading] = React.useState(true);
 
   React.useEffect(()=>{
@@ -54,7 +54,7 @@ const App = () => {
             <SkillsAndExperience />
             <Education />
             <Projects />
-            <BlogPosts enabled={false} />
+            {/* <BlogPosts enabled={false} /> */}
             {/* <OpenSource /> */}
             <ExtraCurricular />
           </div>
@@ -67,4 +67,4 @@ const App = () => {
   }
 };
 
-export default App;
+export default Comp;

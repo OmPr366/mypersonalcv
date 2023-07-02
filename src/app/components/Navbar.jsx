@@ -1,5 +1,5 @@
+// import { useState } from "react";
 import { useState } from "react";
-import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="w-full  flex justify-between items-center navbar pt-5 sticky  top-0 ">
       {/* Logo */}
       <a href="#home">
-        <img src={logo} alt="Om Prakash" className="w-[102px] h-[54px] " />
+        <img src="/assets/logo.png" alt="Om Prakash" className="w-[102px] h-[54px] " />
       </a>
 
       {/* List of links */}
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="sm:hidden flex flex-1 justify-end items-center">
         {/* shows toggle icon based on its state */}
         <img
-          src={toggle ? close : menu}
+          src={toggle ? '/assets/close.svg' : '/assets/menu.svg'}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           // correct way to change state using the prev

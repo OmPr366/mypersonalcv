@@ -1,30 +1,4 @@
 import {
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
-  kiitlogo,
-  cluboard,
-  cash_flow,
-  freadom,
-  bank,
-  graphql,
-  portfolio,
-  publiclab,
-  zulip,
-  chargeswap,
-  placeicon,
-  recruitment,
-  huntly,
-  draggital,
-  techquench,
-  hackmas,
-  gfgkiit,
-  corridor,
-  easyhaionline
-} from "../assets";
-
-import {
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
@@ -90,11 +64,7 @@ import {
   SiSocketdotio,
 } from "react-icons/si";
 
-import { FaHardHat } from "react-icons/fa";
-
-import { IoIosNotificationsOutline } from "react-icons/io";
-
-import { DiCss3, DiMsqlServer, DiRuby } from "react-icons/di";
+import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
 
 export const resumeLink =
   "https://drive.google.com/file/d/10VLVa_9uVAUGBsQawP92CwO6hxlzxWmI/view?usp=drivesdk ";
@@ -128,7 +98,7 @@ export const navLinks = [
 export const educationList = [
   {
     id: "education-1",
-    icon: kiitlogo,
+    icon: './assets/kiitlogo.png',
     title: "Kalinga Institute of Industrial Technology ",
     degree: "Bhubaneswar, Odisha, India",
     duration: "October 2020 - May 2024",
@@ -153,7 +123,7 @@ export const skills = [
       },
       {
         id: "pl-3",
-        icon: SiJava,
+        icon: DiJava,
         name: "Java",
       },
       {
@@ -167,12 +137,12 @@ export const skills = [
         name: "JavaScript",
       },
       {
-        id: "pl-5",
+        id: "pl-6",
         icon: SiTypescript,
         name: "TypeScript",
       },
       {
-        id: "pl-6",
+        id: "pl-7",
         icon: SiSolidity,
         name: "Solidity",
       },
@@ -352,31 +322,29 @@ export const skills = [
   },
 ];
 
+// All Experiences
 export const experiences = [
   {
-    organisation: "TechQuench",
-    logo: techquench,
+    organisation: "Corridor Platforms",
+    logo: './assets/corridor.jpeg',
     link: "https://iris.kiitlogo.ac.in/about_us",
     positions: [
       {
-        title: "Full Stack Developer && Android Developer Intern",
-        duration: "July 2022 - Dec 2022",
+        title: "Full Stack Intern",
+        duration: "May - Present",
         content: [
           {
-            text: "Worked on LMS project named Easyhaionline using ReactJS, NodeJS, ExpressJS, MongoDB",
-            link: "",
-          },
-          {
-            text: "Worked on Android App named Zenquip using React Native and also on backend using NodeJS, ExpressJS && SQL",
+            text: "Working as Full Stack Developer",
             link: "",
           },
         ],
       },
     ],
   },
+  
   {
     organisation: "Draggital",
-    logo: draggital,
+    logo: './assets/draggital.png',
     link: "https://cdc.kiitlogo.ac.in/",
     positions: [
       {
@@ -391,13 +359,30 @@ export const experiences = [
       },
     ],
   },
+  {
+    organisation: "TechQuench",
+    logo: './assets/techquench.png',
+    link: "https://iris.kiitlogo.ac.in/about_us",
+    positions: [
+      {
+        title: "Android Developer",
+        duration: "July 2022 - Dec 2022",
+        content: [
+          {
+            text: "Worked on Android App named Zenquip using React Native and also on backend using NodeJS, ExpressJS && SQL",
+            link: "",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const openSourceContributions = [
   {
     id: "os-1",
     organisation: "PublicLab",
-    logo: publiclab,
+    logo: './assets/publiclab.png',
     repo: "plots2",
     type: "pull-request",
     status: "merged",
@@ -417,7 +402,7 @@ export const projects = [
     title: "Nextgen-ui",
     github: "",
     link: "https://nextgenui.in/",
-    image: chargeswap,
+    image: './assets/chargeswap.png',
     content:
       "A Website to get the frontend Ui of the next generation of websites. It is a collection of the best UIs of the websites that are trending in the market.",
     stack: [
@@ -448,7 +433,7 @@ export const projects = [
     title: "EasyHaiOnline App",
     github: "",
     link: "https://play.google.com/store/apps/details?id=com.easyhaionlineind",
-    image: easyhaionline,
+    image: './assets/easyhaionline.png',
     content:
       "EasyhaiOnline is an Edu-tech App and a part of Harshly group which was established collectively by the dint of enthusiastic and highly skilled engineers, management professionals and skillfully competent educators.",
     stack: [
@@ -568,7 +553,7 @@ export const extraCurricular = [
         link: "",
       },
     ],
-    logo: corridor,
+    logo: './assets/corridor.jpeg',
   },
   {
     organisation: "GFG KIIT Chapter",
@@ -585,7 +570,7 @@ export const extraCurricular = [
         link: "https://github.com/GFG-CLUB-KIIT/GFG-KIIT-website",
       },
     ],
-    logo: gfgkiit,
+    logo: './assets/gfgkiit.jpeg',
   },
   {
     organisation: "HackMas",
@@ -601,7 +586,7 @@ export const extraCurricular = [
         link: "https://roger.vercel.app/",
       },
     ],
-    logo: hackmas,
+    logo: './assets/hackmas.jpeg',
   },
 ];
 
@@ -633,24 +618,7 @@ export const socialMedia = [
   },
 ];
 
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
-];
+
 
 export const aboutMe = {
   name: "Om Prakash",

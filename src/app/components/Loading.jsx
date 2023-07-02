@@ -1,8 +1,7 @@
 import styles from "../style";
 import { motion } from "framer-motion";
-import { logo } from "../assets";
 
-const Loading = ({isLoading}) => {
+const Loading = () => {
     return(
         <motion.div
             id="loading"
@@ -16,7 +15,7 @@ const Loading = ({isLoading}) => {
             }}
           >
               <img
-                src={logo}
+                src={'/assets/logo.png'}
                 alt="Om Prakash"
                 className="w-[103px] h-[54px]"
               />
