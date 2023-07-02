@@ -327,7 +327,7 @@ export const experiences = [
   {
     organisation: "Corridor Platforms",
     logo: './assets/corridor.jpeg',
-    link: "https://iris.kiitlogo.ac.in/about_us",
+    link: "https://corridorplatforms.com/",
     positions: [
       {
         title: "Full Stack Intern",
@@ -345,7 +345,7 @@ export const experiences = [
   {
     organisation: "Draggital",
     logo: './assets/draggital.png',
-    link: "https://cdc.kiitlogo.ac.in/",
+    link: "https://draggital.com/",
     positions: [
       {
         title: "Full Stack Developer Intern",
@@ -362,7 +362,7 @@ export const experiences = [
   {
     organisation: "TechQuench",
     logo: './assets/techquench.png',
-    link: "https://iris.kiitlogo.ac.in/about_us",
+    link: "https://draggital.com/",
     positions: [
       {
         title: "Android Developer",
